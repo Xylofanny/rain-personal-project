@@ -28,11 +28,11 @@ print("The amount of Precipitation in Kent during December 31st, 2025 is:", end_
 # Measures average rain in Kent over 1 month 
 calend = calendar.Calendar()
 sum = 0
-days = 0
+days_in_month = 0
 for days in calend.itermonthdates(2000, 1):
     if days.month == 1:
         this_day = str(days)
         current_date = get_data(47.38, -122.23, this_day)
         sum += current_date['days'][0]['precip']
-        days += 1
-print("The amount of Precipitaiton in Kent in the month of January 2000 was: ", sum / days, "mm")
+        days_in_month += 1
+print("The amount of Precipitaiton in Kent in the month of January 2000 was: ", sum / days_in_month, "mm")
