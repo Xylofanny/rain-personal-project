@@ -1,4 +1,5 @@
 # Practice File for the concepts around getting the rainfall data of Kent (2000-2025) and mapping the rain patterns 
+# This file uses VisualCrossing, but its API key has a free account limit for data, so I'm thinking about changing where I get the data.
 
 import urllib.request
 import json
